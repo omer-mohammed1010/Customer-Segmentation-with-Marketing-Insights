@@ -51,8 +51,6 @@ These features are used to discover hidden customer patterns and group similar c
 
 Before clustering, exploratory analysis was performed to understand customer demographics and spending behavior.
 
-### Distribution Analysis
-
 ![EDA Distribution](images/eda_distributions.png)
 
 ### Key Observations
@@ -66,8 +64,6 @@ Before clustering, exploratory analysis was performed to understand customer dem
 ##  Correlation Analysis
 
 A correlation heatmap was generated to understand relationships between customer attributes.
-
-### Correlation Heatmap
 
 ![Correlation Heatmap](images/heatmap.png)
 
@@ -125,12 +121,6 @@ The Elbow Method was used to identify the optimal number of clusters.
 
 ![Elbow Curve](images/elbow_curve.png)
 
-### Why Elbow Method?
-
-The Elbow Method helps determine the point where increasing the number of clusters provides diminishing returns.
-
-This allows the model to achieve a balance between simplicity and segmentation quality.
-
 ---
 
 ##  Cluster Validation using Silhouette Score
@@ -141,29 +131,12 @@ To validate cluster quality, Silhouette Analysis was performed.
 
 ![Silhouette Scores](images/silhouette_scores.png)
 
-### Why Silhouette Score?
-
-Silhouette Score measures:
-
-- Cluster cohesion
-- Cluster separation
-
-Higher scores indicate better-defined customer groups.
 
 ---
 
 ##  Customer Segmentation using K-Means
 
 After determining the optimal number of clusters, K-Means Clustering was applied.
-
-### Why K-Means?
-
-K-Means was selected because:
-
-- Efficient on structured datasets
-- Easy to interpret
-- Widely used for customer segmentation
-- Produces business-friendly clusters
 
 ---
 
@@ -184,8 +157,6 @@ Distinct customer groups can be observed, indicating meaningful segmentation wit
 ##  Customer Segment Profiles
 
 The resulting clusters were analyzed to understand customer behavior patterns.
-
-### Cluster Profiles
 
 ![Cluster Profiles](images/clusters_profiles.png)
 
@@ -237,6 +208,7 @@ The resulting clusters were analyzed to understand customer behavior patterns.
 - Discounts
 - Bundle offers
 - Cost-effective marketing
+
 
 ---
 
@@ -354,7 +326,7 @@ notebook/customer_segmentation.ipynb
 ##  Project Structure
 
 ```text
-Customer-Segmentation-Marketing-Insights/
+Customer-Segmentation-with-Marketing-Insights/
 │
 ├── data/
 │   └── Mall_Customers.csv
@@ -376,7 +348,8 @@ Customer-Segmentation-Marketing-Insights/
 │   └── eda_distribution.png
 │
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
