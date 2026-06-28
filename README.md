@@ -321,7 +321,10 @@ Open:
 ```text
 notebook/customer_segmentation.ipynb
 ```
-
+### Run locally
+```bash
+streamlit run app.py
+```
 ---
 
 ##  Tech Stack
